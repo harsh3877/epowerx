@@ -1,0 +1,77 @@
+:root{
+    --chakra-colors-gray-100: #43ada5 !important;
+    --chakra-colors-blue-50: #fcca64 !important;
+    --contact-bg: #173a38;
+}
+body {
+    font-family: "Comfortaa" !important;
+  }
+.partnerCarousal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partnerCarousal img{
+    filter: grayscale(1);
+}
+
+.primary_bg{
+    color:#fff !important;
+}
+
+.btn_yellow{
+    background-color: var(--chakra-colors-blue-50) !important;
+}
+
+.contact_container{
+    background-color: var( --contact-bg);
+    color: #fff !important;
+    margin:10px 0px;
+}
+
+.caseTags{
+    background-color: var( --chakra-colors-gray-100) !important ;
+    line-height: 1.5 !important;
+}
+.modal_closeBtn{
+    background-color: var(--chakra-colors-gray-100);
+    color: #fff;
+}
+
+.ModalBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.big_cont{
+    /* height: 200px; */
+}
+
+.contanctFormLeftBtns{
+    /* width: 100% !important; */
+}
+
+.LinkedinLink p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    transition: 0.3s;
+}
+
+.LinkedinLink:hover>p{
+    transform: scale(1.04);
+    background-color: var(--chakra-colors-blue-50);
+    color: #000;
+    border-radius: 5px;
+}
+
+.address{
+    
+    height: auto !important;
+   
+    font-size: 13px !important;
+}
