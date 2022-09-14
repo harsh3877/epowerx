@@ -59,7 +59,7 @@ function NavbarSection() {
             <Box>
               <Link to="/">Epowerx</Link>
             </Box>
-            <HStack
+            {/* <HStack
               as={"nav"}
               spacing={4}
               display={{ base: "none", md: "flex" }}
@@ -69,7 +69,7 @@ function NavbarSection() {
                   {link.title}
                 </NavLink>
               ))}
-            </HStack>
+            </HStack> */}
           </HStack>
           {/* <Flex alignItems={'center'}>
             <Button

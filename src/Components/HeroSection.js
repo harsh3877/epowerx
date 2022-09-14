@@ -31,7 +31,7 @@ function HeroSection() {
         <Text as={"span"} color="#43ada5">
           12+ years of combined experience in Productionizing AI Models
         </Text>
-         <Stack
+         {/* <Stack
           direction={"column"}
           spacing={3}
           align={"center"}
@@ -73,7 +73,7 @@ function HeroSection() {
               Proof of concept
             </Text>
           </Box>
-        </Stack>
+        </Stack> */}
       </Stack>
     </Container>
   );

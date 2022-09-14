@@ -129,7 +129,7 @@ function ContactSection() {
                       </Button>
                     </VStack>
                   </Box>
-                  <HStack
+                  {/* <HStack
                     mt={{ lg: 10, md: 10 }}
                     spacing={5}
                     px={5}
@@ -159,7 +159,7 @@ function ContactSection() {
                       _hover={{ bg: "#fcca64" }}
                       icon={<BsDiscord size="28px" />}
                     />
-                  </HStack>
+                  </HStack> */}
                 </Box>
               </WrapItem>
               <WrapItem>

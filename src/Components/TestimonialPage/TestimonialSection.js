@@ -41,14 +41,14 @@ function TestimonialSection() {
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
           <Heading>Our Clients Speak</Heading>
-          <Text color="#43ada5">We have been working with clients around the world</Text>
+          {/* <Text color="#43ada5">We have been working with clients around the world</Text> */}
         </Stack>
         <Stack
           direction={{ base: 'column', md: 'row' }}
           spacing={{ base: 10, md: 4, lg: 10 }}>
-            {TestimonialList.map(item=>{
+            {TestimonialList.map((item,i)=>{
               return(
-                <SingleTestimonial data={item} />
+                <SingleTestimonial key={i} data={item} />
               )
             })}
         </Stack>

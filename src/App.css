@@ -6,6 +6,11 @@
 body {
     font-family: "Comfortaa" !important;
   }
+
+  a:hover{
+    text-decoration: none;
+    color: none;
+  }
 .partnerCarousal{
     display: flex;
     align-items: center;
@@ -75,3 +80,83 @@ body {
    
     font-size: 13px !important;
 }
+
+@media (min-width: 768px) {
+    .multi-item-carousel .carousel-inner .carousel-item {
+        margin-right: inherit;
+   }
+    .multi-item-carousel .carousel-inner .carousel-item.active + .carousel-item, .multi-item-carousel .carousel-inner .carousel-item.active + .carousel-item + .carousel-item {
+        display: block;
+   }
+    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left), .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item, .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+   }
+    .multi-item-carousel .carousel-inner .carousel-item.active + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.333333333333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+   }
+    .multi-item-carousel .carousel-inner .carousel-item-next, .multi-item-carousel .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0,0,0);
+   }
+    .multi-item-carousel .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+   }
+    .multi-item-carousel .active.carousel-item-left + .carousel-item-next.carousel-item-left, .multi-item-carousel .carousel-item-next.carousel-item-left + .carousel-item, .multi-item-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item, .multi-item-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%,0,0);
+        visibility: visible;
+   }
+    .multi-item-carousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right, .multi-item-carousel .carousel-item-prev.carousel-item-right + .carousel-item, .multi-item-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item, .multi-item-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%,0,0);
+        display: block;
+        visibility: visible;
+   }
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+   
+    background-color: #43ada5;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.carousel-control-next {
+    right: -20px !important;
+    width: 20px;
+}
+
+.carousel-control-prev {
+    left: -15px !important;
+    width: 20px;
+}
+
+
+
+  .ImagesSlider{
+    display: flex;
+    column-gap: 20px;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+
+  .ImagesSlider img{
+    width:700px;
+  }
+
+  .slidernote{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-bottom: 10px;
+  }

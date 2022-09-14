@@ -6,7 +6,7 @@ function TestimonialPage() {
   return (
     <>
         <TestimonialSection />
-        <ContactSection />
+        {/* <ContactSection /> */}
     </>
   )
 }

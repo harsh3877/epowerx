@@ -40,7 +40,7 @@ function PeopleSection() {
       <Container py={16} maxW={"7xl"} as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"}>
           <Heading>Who Are We</Heading>
-          <Text color="#43ada5">12+ years of combined experience in Productionizing AI Models</Text>
+          {/* <Text color="#43ada5">12+ years of combined experience in Productionizing AI Models</Text> */}
         </Stack>
         <Center py={6}>
           <Stack

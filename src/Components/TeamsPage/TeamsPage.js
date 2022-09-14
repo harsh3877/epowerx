@@ -7,7 +7,7 @@ function TeamsPage() {
   return (
     <>
         <PeopleSection />
-        <ContactSection />
+        {/* <ContactSection /> */}
     </>
   )
 }

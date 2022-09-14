@@ -63,7 +63,7 @@ function FooterSection() {
         <Box
       bg={useColorModeValue('gray.100', 'gray.900')}
       color="#fff">
-      <Container
+      {/* <Container
         as={Stack}
         maxW={'6xl'}
         py={4}
@@ -78,7 +78,7 @@ function FooterSection() {
           <Link href={'testimonials'}>Testimonials</Link>
           <Link href={'#Contact'}>Contact</Link>
         </Stack>
-      </Container>
+      </Container> */}
 
       <Box
         borderTopWidth={1}
@@ -93,7 +93,7 @@ function FooterSection() {
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
           <Text>© 2022 Epowerx. All rights reserved</Text>
-          <Stack direction={'row'} spacing={6}>
+          {/* <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Twitter'} >
               <FaTwitter />
             </SocialButton>
@@ -103,7 +103,7 @@ function FooterSection() {
             <SocialButton label={'Instagram'}>
               <FaInstagram />
             </SocialButton>
-          </Stack>
+          </Stack> */}
         </Container>
       </Box>
     </Box>
